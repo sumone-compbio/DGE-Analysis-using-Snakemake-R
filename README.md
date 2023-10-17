@@ -20,3 +20,4 @@ We're interested in outliers here. Outliers at the top are overexpressed genes a
 
 Similarly, MA plots for other conditions can be drawn following the code in the deseq2.R file. 
 
+Next: Creating volcano plots, filtering differentially expressed genes based on log fold change, gene ontology (GO), and GSEA to identify the roles and significance of potential biomarkers.
