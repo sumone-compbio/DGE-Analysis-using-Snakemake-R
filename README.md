@@ -1,7 +1,7 @@
 # Differential-Gene-Expression-DGE-Analysis
-A simple-easy follow tutorial on differential gene expression analysis in R
+A simple-to-follow tutorial on differential gene expression analysis in R
 
-## About the study: 
+## About the case study: 
 ### Title: DUX4-r neomorphic activity depending on GTF2I in acute lymphoblastic leukemia [RNA-seq]
 ##### Description:
 The rearranged versions of the transcription factor DUX4 (DUX4-r produced by translocations) are one of the most common causes of B-cell lymphoblastic leukemia (B-ALL). The study discovered that such rearrangements can lead to both a loss and a gain of function in DUX4-r.
