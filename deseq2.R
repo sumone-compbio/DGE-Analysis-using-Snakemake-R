@@ -53,22 +53,38 @@ plotDispEsts(dds)
 # 1) To compare DUX4 vs. EV
 DUX4_vs_EV = results(dds, contrast=c("condition", "DUX4", "EV"))
 summary(DUX4_vs_EV)
-## MA plot
+
+## lfcshrinkage for more stable estimates
+DUX4_vs_EV = lfcShrink(dds, contrast=c("condition", "DUX4", "EV"), type="ashr")
+summary(DUX4_vs_EV) #no significant change observed
+
+### MA plot
 plotMA(DUX4_vs_EV)
-### lfcshrinkage for more stable estimates
-DUX4_vs_EV = lfcShrink(dds, contrast=c("condition", "DUX4", "EV"), type="apeglm")
-write.table(DUX4_vs_EV, file = "dux4_vs_normal_dux4.csv", row.names=F, sep = ",") 
+### save the results
+write.table(DUX4_vs_EV, file = "dux4_vs_ev.csv", row.names=F, sep = ",") 
 
 # 2) To compare IGH vs. EV
 IGH_vs_EV = results(dds, contrast=c("condition", "IGH", "EV"))
 summary(IGH_vs_EV)
+
+## lfcshrinkage...
+IGH_vs_EV = lfcShrink(dds, contrast=c("condition", "IGH", "EV"), type="ashr")
+summary(IGH_vs_EV) # no significant change...
+
 ### MA plot
 plotMA(IGH_vs_EV)
-write.table(IGH_vs_EV, file = "IGH_vs_normal_dux4.csv", row.names=F, sep = ",") 
+### saving...
+write.table(IGH_vs_EV, file = "IGH_vs_EV.csv", row.names=F, sep = ",") 
 
 # 3) To compare delta_50 vs. EV
 delta_50_vs_EV = results(dds, contrast=c("condition", "delta_50", "EV"))
 summary(delta_50_vs_EV)
+
+## lfcshrinkage...
+delta_50_vs_EV = lfcShrink(dds, contrast=c("condition", "delta_50", "EV"), type="ashr")
+summary(delta_50_vs_EV) # no significant change...
+
 ### MA plot
 plotMA(delta_50_vs_EV)
-write.table(delta_50_vs_EV, file = "delta_50_vs_normal_dux4.csv", row.names=F, sep = ",")
+### saving...
+write.table(delta_50_vs_EV, file = "delta_50_vs_EV.csv", row.names=F, sep = ",")
