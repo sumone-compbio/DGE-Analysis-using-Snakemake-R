@@ -41,9 +41,6 @@ all(colnames(all_data) == rownames(column_data))
 dds = DESeqDataSetFromMatrix(countData = all_data, colData = column_data, design = ~ condition)
 dds = DESeq(dds)
 
-## setting the factor levels
-##dds$condition = relevel(dds$condition, ref = "EV")
-
 ## variance-stabilizing transformation to stabilize variance across the expression values.
 vst_res = vst(dds, blind = FALSE)
 
