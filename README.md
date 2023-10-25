@@ -5,7 +5,9 @@ A simple-to-follow tutorial on differential gene expression analysis in R
 ### Title: DUX4-r neomorphic activity depending on GTF2I in acute lymphoblastic leukemia [RNA-seq]
 ##### Description:
 The rearranged versions of the transcription factor DUX4 (DUX4-r produced by translocations) are one of the most common causes of B-cell lymphoblastic leukemia (B-ALL). The study discovered that such rearrangements can lead to both a loss and a gain of function in DUX4-r.
+
 Loss:  Loss of CBP/EP300 transcriptional co-activators interaction and inability to bind and activate repressed chromatin. The rearranged DUX4-r can still bind to DNA but has alterations in its C-terminal transcription activation domain, affecting its interaction with the co-activators CBP and EP300.
+
 Gain: Gain of interaction with the transcription factor GTF2I redirecting DUX4-r toward leukemogenic targets. Hence, GTF2I can be a potential target to inhibit DUX4-r from causing leukemia.
 
 ##### Link to the study: 
