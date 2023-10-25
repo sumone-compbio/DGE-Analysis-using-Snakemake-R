@@ -30,4 +30,15 @@ We're interested in outliers here. Outliers at the top are overexpressed genes a
 
 Similarly, MA plots for other conditions can be drawn following the code in the deseq2.R file. 
 
-Next: Creating volcano plots, filtering differentially expressed genes based on log fold change, gene ontology (GO), and GSEA to identify the roles and significance of potential biomarkers.
+#### 4) Volcano PLot
+
+##### IGH vs EV
+Left-hand side: Downregulated genes (log2FoldChange>2, p-adj value < 0.0001)
+Right-hand side: Upregulated genes (log2FoldChange<-2, p-adj value < 0.0001)
+
+Significant genes are labeled based on their log2FoldChange and p-adj value.
+![igh_vs_ev_vp](https://github.com/sumone-compbio/Differential-Gene-Expression-DGE-Analysis/assets/43076959/5cadb0ff-54fb-4989-a85b-19ae801a20a1)
+
+
+Significant genes are labelled based on log2 fold change and p
+Next: Gene Ontology (GO), and GSEA to identify the roles and significance of potential biomarkers.
