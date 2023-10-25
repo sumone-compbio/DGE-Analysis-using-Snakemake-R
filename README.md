@@ -40,5 +40,6 @@ Significant genes are labeled based on their log2FoldChange and p-adj value.
 ![igh_vs_ev_vp](https://github.com/sumone-compbio/Differential-Gene-Expression-DGE-Analysis/assets/43076959/5cadb0ff-54fb-4989-a85b-19ae801a20a1)
 
 
-Significant genes are labelled based on log2 fold change and p
-Next: Gene Ontology (GO), and GSEA to identify the roles and significance of potential biomarkers.
+Significant genes are labelled based on their log2FoldChange and p-adj values. 
+
+###### Next: Gene Ontology (GO), and GSEA to identify the roles and significance of potential biomarkers.
