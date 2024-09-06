@@ -10,6 +10,9 @@ Loss:  Loss of CBP/EP300 transcriptional co-activators interaction and inability
 
 Gain: Gain of interaction with the transcription factor GTF2I redirecting DUX4-r toward leukemogenic targets. Hence, GTF2I can be a potential target to inhibit DUX4-r from causing leukemia.
 
+##### My Aim:
+How different variants of DUX4 e.g. DUX4 (wild type), DUX4-IGH, and DUX4-del50 impact different genes and associated ontologies e.g. Biological Pathways.
+
 ##### Link to the study: 
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE227982
 
