@@ -29,9 +29,9 @@ The fitted (red) line should be lower than the dispersion value of 1.
 
 #### 3) MA plots for each condition compared to control, i.e., EV in this study. 
 
-##### DUX4 vs EV
+##### IGH vs EV
 We're interested in outliers here. Outliers at the top are overexpressed genes and the outliers at the bottom are underexpressed genes. 
-![dux4_vs_ev](https://github.com/sumenties/Differential-Gene-Expression-DGE-Analysis/assets/43076959/78a1a7dd-b751-4fd8-81fc-564c7ed9805f)
+![igh_vs_ev](https://github.com/user-attachments/assets/f52b491a-f95f-406c-9b1e-d28f79bca2a7) 
 
 Similarly, MA plots for other conditions can be drawn following the code in the deseq2.R file. 
 
