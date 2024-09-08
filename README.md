@@ -45,6 +45,13 @@ Significant genes are labeled based on their log2FoldChange and p-adj value.
 ![igh_vs_ev_vp](https://github.com/sumone-compbio/Differential-Gene-Expression-DGE-Analysis/assets/43076959/5cadb0ff-54fb-4989-a85b-19ae801a20a1)
 
 
-Significant genes are labelled based on their log2FoldChange and p-adj values. 
+Significant genes are labeled based on their log2FoldChange and p-adj values. 
+
+#### 5) Dot Plot for GSEA analysis
+
+##### IGH vs EV
+![dot_ighvsev](https://github.com/user-attachments/assets/5024555e-67c1-4754-95c7-734d1c3ccdf8)
+
+Here we're interested in pathways with a high gene ratio (~0.8) i.e. the pathway associated with antigen processing and presentation via class MHC II is being suppressed. Presenting extracellular antigens is necessary for activating CD4+ T cells and thus triggering an immune response. My analysis aligns with immune-evasive activities commonly observed in cancers, where tumor cells alter pathways involved in antigen presentation to escape immune surveillance by hindering the immune system’s ability to detect and present tumor antigens. 
 
 
