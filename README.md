@@ -52,6 +52,6 @@ Significant genes are labeled based on their log2FoldChange and p-adj values.
 ##### IGH vs EV
 ![dot_ighvsev](https://github.com/user-attachments/assets/5024555e-67c1-4754-95c7-734d1c3ccdf8)
 
-Here we're interested in pathways with a high gene ratio (~0.8) i.e. the pathway associated with antigen processing and presentation via class MHC II is being suppressed. Presenting extracellular antigens is necessary for activating CD4+ T cells and thus triggering an immune response. My analysis aligns with immune-evasive activities commonly observed in cancers, where tumor cells alter pathways involved in antigen presentation to escape immune surveillance by hindering the immune system’s ability to detect and present tumor antigens. 
+Here we're interested in pathways with a high gene ratio (~0.8) i.e. the pathway associated with antigen processing and presentation via class MHC II is being suppressed. Presenting extracellular antigens is necessary for activating CD4+ T cells and thus triggering an immune response. My analysis aligns with immune-evasive activities commonly observed in cancers, where tumor cells alter pathways involved in antigen presentation to escape immune surveillance by hindering the immune system’s ability to detect and present tumor antigens [https://link.springer.com/article/10.1007/s40495-017-0097-y](url).  
 
 
