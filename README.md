@@ -4,11 +4,11 @@ A simple-to-follow tutorial on differential gene expression analysis in R
 ## About the case study: 
 ### Title: DUX4-r neomorphic activity depending on GTF2I in acute lymphoblastic leukemia [RNA-seq]
 ##### Description:
-The rearranged versions of the transcription factor DUX4 (DUX4-r produced by translocations) are one of the most common causes of B-cell lymphoblastic leukemia (B-ALL). The study discovered that such rearrangements can lead to both a loss and a gain of function in DUX4-r.
+The rearranged versions of the transcription factor DUX4 (DUX4-r produced by translocations) are one of the most common causes of B-cell lymphoblastic leukaemia (B-ALL). The study discovered that such rearrangements can lead to both a loss and a gain of function in DUX4-r.
 
 Loss:  Loss of CBP/EP300 transcriptional co-activators interaction and inability to bind and activate repressed chromatin. The rearranged DUX4-r can still bind to DNA but has alterations in its C-terminal transcription activation domain, affecting its interaction with the co-activators CBP and EP300.
 
-Gain: Gain of interaction with the transcription factor GTF2I redirecting DUX4-r toward leukemogenic targets. Hence, GTF2I can be a potential target to inhibit DUX4-r from causing leukemia.
+Gain: Gain of interaction with the transcription factor GTF2I redirecting DUX4-r toward leukemogenic targets. Hence, GTF2I can be a potential target to inhibit DUX4-r from causing leukaemia.
 
 ##### AIM:
 How different variants of DUX4 e.g. DUX4 (wild type), DUX4-IGH, and DUX4-del50 impact different genes and associated ontologies e.g. Biological Pathways.
@@ -35,23 +35,23 @@ We're interested in outliers here. Outliers at the top are overexpressed genes a
 
 Similarly, MA plots for other conditions can be drawn following the code in the deseq2.R file. 
 
-#### 4) Volcano PLot
+#### 4) Volcano plot
 
 ##### IGH vs EV
 Left-hand side: Downregulated genes (log2FoldChange>2, p-adj value < 0.0001)
 Right-hand side: Upregulated genes (log2FoldChange<-2, p-adj value < 0.0001)
 
-Significant genes are labeled based on their log2FoldChange and p-adj value.
+Significant genes are labelled based on their log2FoldChange and p-adj value.
 ![igh_vs_ev_vp](https://github.com/sumone-compbio/Differential-Gene-Expression-DGE-Analysis/assets/43076959/5cadb0ff-54fb-4989-a85b-19ae801a20a1)
 
 
-Significant genes are labeled based on their log2FoldChange and p-adj values. 
+Significant genes are labelled based on their log2FoldChange and p-adj values. 
 
 #### 5) Dot Plot for GSEA analysis
 
 ##### IGH vs EV
 ![dot_ighvsev](https://github.com/user-attachments/assets/5024555e-67c1-4754-95c7-734d1c3ccdf8)
 
-Here we're interested in pathways with a high gene ratio (~0.8) i.e. the pathway associated with antigen processing and presentation via class MHC II is being suppressed. Presenting extracellular antigens is necessary for activating CD4+ T cells and thus triggering an immune response. My analysis aligns with immune-evasive activities commonly observed in cancers, where tumor cells alter pathways involved in antigen presentation to escape immune surveillance by hindering the immune system’s ability to detect and present tumor antigens [https://link.springer.com/article/10.1007/s40495-017-0097-y](url).  
+Here we're interested in pathways with a high gene ratio (~0.8) i.e. the pathway associated with antigen processing and presentation via class MHC II is being suppressed. Presenting extracellular antigens is necessary for activating CD4+ T cells and thus triggering an immune response. My analysis aligns with immune-evasive activities commonly observed in cancers, where tumour cells alter pathways involved in antigen presentation to escape immune surveillance by hindering the immune system’s ability to detect and present tumour antigens [https://link.springer.com/article/10.1007/s40495-017-0097-y](url).  
 
 
