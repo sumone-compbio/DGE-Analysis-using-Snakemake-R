@@ -1,4 +1,4 @@
-# Differential-Gene-Expression-DGE-Analysis
+# Differential-Gene-Expression-DGE-Analysis using Snakemake and R
 A simple-to-follow tutorial on differential gene expression analysis in R
 
 ## About the case study: 
