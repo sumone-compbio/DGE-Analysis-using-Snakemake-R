@@ -49,7 +49,27 @@ This study involves three experimental conditions—DUX4 (wild type), DUX4-IGH, 
 
 In the example above, we are testing the contrast IGH vs EV. You can easily run other contrasts by modifying the contrasts parameter in the Snakemake command—no changes to the R scripts are required.
 
-You can also extend the command with additional parameters through ```--config``` in the snakemake command above. These parameters are passed to the Snakefile and can be used inside your R scripts.
+You can also add more parameters required through ```--config``` in the snakemake command above. To make this work, you should remove hard-coded values from your R scripts and instead let Snakemake pass them as configurable arguments. For example, instead of fixing the FDR cutoff in deseq2.R:
+```
+fdr_cutoff <- 0.001
+```
+do this:
+```
+fdr_cutoff <- snakemake@params[["fdr_cutoff"]]
+```
+Now you may define the default in the Snakefile:
+```
+rule deseq2:
+    params:
+        fdr_cutoff = config.get("fdr_cutoff", 0.001)   # default
+    script:
+        "scripts/deseq2.R"
+```
+Now you can dynamically change the cutoff when running Snakemake:
+```
+snakemake --use-conda --cores 4 \
+  --config contrasts='[["IGH","EV"]]' fdr_cutoff=0.05
+```
 
 ## Results 
 ### Let's look at the plots of the analysis:
