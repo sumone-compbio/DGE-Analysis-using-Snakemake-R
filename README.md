@@ -72,7 +72,7 @@ snakemake --use-conda --cores 4 \
 ```
 
 ## Results 
-### Let's look at the plots of the analysis for IGH vs EV:
+### Let's look at the plots of the analysis:
 
 #### 1) PCA Plot
 PCA plot of the study. Ideally, each condition should form a distinct cluster as shown here.
