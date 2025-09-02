@@ -22,8 +22,7 @@ If you already have your own R scripts for these steps, simply replace mine with
 ```
 DGE-pipeline/
 ├── Snakefile
-├── config/
-│   └── config.yaml
+├── config.yaml
 ├── scripts/
 │   ├── deseq2.R
 │   ├── volcanoplot.R
