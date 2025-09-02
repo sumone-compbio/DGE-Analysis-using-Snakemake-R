@@ -45,7 +45,11 @@ In the DGE-pipeline directory, run the following command:
 ```
 snakemake --use-conda --cores 4 --config contrasts='[["IGH","EV"]]'
 ```
-Since there are 3 conditions in this study 
+This study involves three experimental conditions—DUX4 (wild type), DUX4-IGH, and DUX4-del50—with EV (Empty Vector) serving as the negative control.
+
+In the example above, we are testing the contrast IGH vs EV. You can easily run other contrasts by modifying the contrasts parameter in the Snakemake command—no changes to the R scripts are required (That's the beauty of Snakemake).
+
+Similarly, you can also extend the command with additional parameters as needed, depending on your analysis requirements.
 
 ## Plots 
 ### Let's look at the plots of the analysis:
