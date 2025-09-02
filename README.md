@@ -34,6 +34,7 @@ DGE-pipeline/
 │   ├── r_deseq2.yaml
 │   ├── r_volcano.yaml
 │   └── r_gsea.yaml
+└── README.md
 ```
 
 ## Plots 
