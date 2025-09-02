@@ -47,7 +47,7 @@ snakemake --use-conda --cores 4 --config contrasts='[["IGH","EV"]]'
 ```
 This study involves three experimental conditions—DUX4 (wild type), DUX4-IGH, and DUX4-del50—with EV (Empty Vector) serving as the negative control.
 
-In the example above, we are testing the contrast IGH vs EV. You can easily run other contrasts by modifying the contrasts parameter in the Snakemake command—no changes to the R scripts are required.
+In this example, we are testing the contrast IGH vs EV. You can easily run other contrasts by modifying the contrasts parameter in the Snakemake command—no changes to the R scripts are required.
 
 You can also add more parameters required through ```--config``` in the snakemake command above. To make this work, you should remove hard-coded values from your R scripts and instead let Snakemake pass them as configurable arguments. For example, instead of fixing the FDR cutoff in deseq2.R:
 ```
@@ -72,7 +72,7 @@ snakemake --use-conda --cores 4 \
 ```
 
 ## Results 
-### Let's look at the plots of the analysis:
+### Let's look at the plots of the analysis for IGH vs EV:
 
 #### 1) PCA Plot
 PCA plot of the study. Ideally, each condition should form a distinct cluster as shown here.
