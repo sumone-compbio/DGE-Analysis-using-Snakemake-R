@@ -51,7 +51,7 @@ In the example above, we are testing the contrast IGH vs EV. You can easily run 
 
 Similarly, you can also extend the command with additional parameters as needed, depending on your analysis requirements.
 
-## Plots 
+## Results 
 ### Let's look at the plots of the analysis:
 
 #### 1) PCA Plot
