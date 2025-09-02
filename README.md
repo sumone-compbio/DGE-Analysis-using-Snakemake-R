@@ -47,9 +47,9 @@ snakemake --use-conda --cores 4 --config contrasts='[["IGH","EV"]]'
 ```
 This study involves three experimental conditions—DUX4 (wild type), DUX4-IGH, and DUX4-del50—with EV (Empty Vector) serving as the negative control.
 
-In the example above, we are testing the contrast IGH vs EV. You can easily run other contrasts by modifying the contrasts parameter in the Snakemake command—no changes to the R scripts are required (That's the beauty of Snakemake).
+In the example above, we are testing the contrast IGH vs EV. You can easily run other contrasts by modifying the contrasts parameter in the Snakemake command—no changes to the R scripts are required.
 
-Similarly, you can also extend the command with additional parameters as needed, depending on your analysis requirements.
+You can also extend the command with additional parameters through ```--config``` in the snakemake command above. These parameters are passed to the Snakefile and can be used inside your R scripts.
 
 ## Results 
 ### Let's look at the plots of the analysis:
