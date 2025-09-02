@@ -29,7 +29,7 @@ DGE-pipeline/
 │   ├── volcanoplot.R
 │   └── gsea.R
 ├── data/
-│   └── GSE227982_all_counts.xlsx   # gene expression raw counts downloaded from this study link. 
+│   └── GSE227982_all_counts.xlsx   # gene expression raw counts from this study. 
 ├── results/
 │   ├── deseq2/
 │   ├── volcano/
