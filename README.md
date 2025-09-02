@@ -30,14 +30,10 @@ DGE-pipeline/
 ├── data/
 │   └── GSE227982_all_counts.xlsx   # gene expression raw counts from this study. 
 ├── results/
-│   ├── deseq2/
-│   ├── volcano/
-│   └── gsea/
 ├── envs/
 │   ├── r_deseq2.yaml
 │   ├── r_volcano.yaml
 │   └── r_gsea.yaml
-└── README.md
 ```
 
 ## Plots 
