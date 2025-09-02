@@ -10,11 +10,31 @@ Loss:  Loss of CBP/EP300 transcriptional co-activators interaction and inability
 
 Gain: Gain of interaction with the transcription factor GTF2I, redirecting DUX4-r toward leukemogenic targets. Hence, GTF2I can be a potential target to inhibit DUX4-r from causing leukaemia.
 
-## AIM:
+## AIM of my study:
 How different variants of DUX4, e.g., DUX4 (wild type), DUX4-IGH, and DUX4-del50, impact different genes and associated ontologies, e.g., Biological Pathways.
 
 ## Methods:
-
+First, prepare your directory for the Snakemake pipeline as follows:
+` DGE-pipeline/
+├── Snakefile
+├── config/
+│   └── config.yaml
+├── scripts/
+│   ├── deseq2.R
+│   ├── volcanoplot.R
+│   └── gsea.R
+├── data/
+│   └── GSE227982_all_counts.xlsx   # raw input
+├── results/
+│   ├── deseq2/
+│   ├── volcano/
+│   └── gsea/
+├── envs/
+│   ├── r_deseq2.yaml
+│   ├── r_volcano.yaml
+│   └── r_gsea.yaml
+└── README.md
+`
 
 ## Plots 
 ### Let's look at the plots of the analysis:
