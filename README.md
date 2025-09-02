@@ -41,7 +41,10 @@ DGE-pipeline/
 │   └── r_gsea.yaml
 └── README.md
 ```
-If all the files are in the 
+In the DGE-pipeline directory, run the following command:
+```
+snakemake --use-conda --cores 4 --config contrasts='[["IGH","EV"]]'
+```
 
 ## Plots 
 ### Let's look at the plots of the analysis:
