@@ -45,6 +45,7 @@ In the DGE-pipeline directory, run the following command:
 ```
 snakemake --use-conda --cores 4 --config contrasts='[["IGH","EV"]]'
 ```
+Since there are 3 conditions in this study 
 
 ## Plots 
 ### Let's look at the plots of the analysis:
