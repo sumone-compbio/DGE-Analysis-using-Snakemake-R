@@ -14,7 +14,11 @@ Gain: Gain of interaction with the transcription factor GTF2I, redirecting DUX4-
 How different variants of DUX4, e.g., DUX4 (wild type), DUX4-IGH, and DUX4-del50, impact different genes and associated ontologies, e.g., Biological Pathways.
 
 ## Methods:
-First, prepare your directory for the Snakemake pipeline as follows:
+This tutorial walks you through differential gene expression (DGE) analysis using DESeq2 in R, followed by generating a volcano plot to highlight over- and under-expressed genes, and a GSEA plot for pathway enrichment analysis.
+The workflow is organized into three R scripts: deseq2.R, volcanoplot.R, and gsea.R.
+If you already have your own R scripts for these steps, simply replace mine with yours and follow the instructions below.
+
+1) Firstly, prepare your directory for the Snakemake pipeline as follows:
 ```
 DGE-pipeline/
 ├── Snakefile
@@ -25,7 +29,7 @@ DGE-pipeline/
 │   ├── volcanoplot.R
 │   └── gsea.R
 ├── data/
-│   └── GSE227982_all_counts.xlsx   # raw input
+│   └── GSE227982_all_counts.xlsx   # gene expression raw counts downloaded from this study link. 
 ├── results/
 │   ├── deseq2/
 │   ├── volcano/
