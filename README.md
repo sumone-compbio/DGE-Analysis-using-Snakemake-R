@@ -14,7 +14,8 @@ Gain: Gain of interaction with the transcription factor GTF2I, redirecting DUX4-
 How different variants of DUX4, e.g., DUX4 (wild type), DUX4-IGH, and DUX4-del50, impact different genes and associated ontologies, e.g., Biological Pathways.
 
 ## Dependencies:
-```Anaconda: 25.5.1```
+```Anaconda: 25.5.1```, ```Snakemake: 9.10.0```, ```R: 4.4.2```, ```Bioconductor: 3.19```
+R and Bioconductor libraries are mentioned in the envs directory for each R script, which will be installed automatically in this pipeline.   
 
 ## Methods:
 This tutorial walks you through differential gene expression (DGE) analysis using DESeq2 in R, followed by generating a volcano plot to highlight over- and under-expressed genes, and a GSEA plot for pathway enrichment analysis.
