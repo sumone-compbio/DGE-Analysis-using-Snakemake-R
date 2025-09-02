@@ -15,6 +15,7 @@ How different variants of DUX4, e.g., DUX4 (wild type), DUX4-IGH, and DUX4-del50
 
 ## Dependencies:
 ```Anaconda: 25.5.1```, ```Snakemake: 9.10.0```, ```R: 4.4.2```, ```Bioconductor: 3.19```
+
 R and Bioconductor libraries are mentioned in the envs directory for each R script, which will be installed automatically in this pipeline.   
 
 ## Methods:
