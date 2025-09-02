@@ -15,9 +15,10 @@ How different variants of DUX4, e.g., DUX4 (wild type), DUX4-IGH, and DUX4-del50
 
 ## Methods:
 First, prepare your directory for the Snakemake pipeline as follows:
-`DGE-pipeline/
-|- Snakefile
-|- config/
+```
+DGE-pipeline/
+├── Snakefile
+├── config/
 │   └── config.yaml
 ├── scripts/
 │   ├── deseq2.R
@@ -33,7 +34,8 @@ First, prepare your directory for the Snakemake pipeline as follows:
 │   ├── r_deseq2.yaml
 │   ├── r_volcano.yaml
 │   └── r_gsea.yaml
-└── README.md`
+└── README.md
+```
 
 ## Plots 
 ### Let's look at the plots of the analysis:
