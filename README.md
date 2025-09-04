@@ -71,7 +71,7 @@ snakemake --use-conda --cores 4 \
   --config contrasts='[["IGH","EV"]]' fdr_cutoff=0.05
 ```
 
-## Results 
+## Results:
 ### Let's look at the plots of the analysis:
 
 #### 1) PCA Plot
